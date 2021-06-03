@@ -24,23 +24,22 @@ fetch(
 
 ).then(res => res.json())
 .then(function(resposta){
-    console.log(resposta.results[0])
 
 
-    let taxa = resposta.results[0].death_rate;
-    document.querySelector('#taxa').innerHTML = (taxa.toFixed(2)*100)+'%';  
+  let taxa = resposta.results[0].death_rate;
+  document.querySelector('#taxa').innerHTML = (taxa.toFixed(2)*100)+'%';  
 
-    let confirmados = resposta.results[0].confirmed;
-    document.querySelector('#confirmados').innerHTML = confirmados;
+  let confirmados = resposta.results[0].confirmed;
+  document.querySelector('#confirmados').innerHTML = confirmados.toLocaleString('pt-BR');
 
-    let population = resposta.results[0].estimated_population;
-    document.querySelector('#populacao').innerHTML = population;
+  let population = resposta.results[0].estimated_population;
+  document.querySelector('#populacao').innerHTML = population.toLocaleString('pt-BR');
 
-    let fatalidades = resposta.results[0].deaths;
-    document.querySelector('#fatalidades').innerHTML = fatalidades;
+  let fatalidades = resposta.results[0].deaths;
+  document.querySelector('#fatalidades').innerHTML = fatalidades.toLocaleString('pt-BR');
 
-    let data = resposta.results[0].date;
-    document.querySelector('#data').innerHTML = data;
+  let data = resposta.results[0].date;
+  document.querySelector('#data').innerHTML = data;
 });
 
 
