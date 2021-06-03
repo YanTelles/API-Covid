@@ -75,7 +75,7 @@ header{
 }
 
 .grafic{
-    margin: 75px auto;
+    margin: 75px auto 0;
     width: 80%;
 }
 
@@ -89,11 +89,23 @@ header{
 }
 
 .w3-light-grey{
+    border-radius: 15px;
+    padding: 5px;
     color:#000!important;
-    background-color:#f1f1f1!important;
+    background-color:#38abab;
+}
+
+.w3-light-grey p{
+    font-size: 1pc;
 }
 
 .w3-container{
+    text-align: center;
+    box-shadow: 0px 2px 17px -3px rgba(0,0,0,0.75);
+    padding: 25px;
+    border-radius: 15px;
+    padding: 20px;
+    width: 8%;
     background-color: #47ffff;
     padding:0.01em 16px;
     content:"";display:table;clear:both
@@ -141,9 +153,10 @@ header{
     }
 
     .grafic{
-        margin: 0 auto;
-        width: 100%;
+        margin: 70px auto 10px;
+        width: 80%;
     }
+    
 
 }
 
@@ -203,10 +216,6 @@ h1:last-of-type {
     box-shadow: 0px 30px 40px -20px var(--grayishBlue);
     padding: 30px;
     margin: 20px;  
-}
-
-img {
-    float: right;
 }
 
 @media (max-width: 450px) {
