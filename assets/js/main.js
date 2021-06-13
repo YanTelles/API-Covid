@@ -13,6 +13,8 @@ function mobileMenu() {
     navMenu.classList.toggle("active");
 }
 
+// Lembrar de atualizar a chave de autenticação
+
 fetch(
   url,
   {

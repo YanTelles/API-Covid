@@ -7,8 +7,16 @@
 }
 
 html {
+    padding-top: 60px;
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-size: cover;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 li {
@@ -67,15 +75,17 @@ a {
 }
 
 header{
+    right: 0px;
+    top: 0;
     padding: 0;
     background-color: #fff;
     position: fixed;
-    width: 99%;
+    width: 100%;
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 }
 
 .grafic{
-    margin: 75px auto 0;
+    margin: 0 auto;
     width: 80%;
 }
 
@@ -111,6 +121,18 @@ header{
     content:"";display:table;clear:both
 }
 
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 @media only screen and (max-width: 530px) {
     *{
         padding: 2px;
@@ -126,8 +148,7 @@ header{
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
@@ -142,30 +163,28 @@ header{
         display: block;
         cursor: pointer;
     }
-
-    .teste{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        text-align: center; 
-    }
-
-    .grafic{
-        margin: 70px auto 10px;
-        width: 80%;
-    }
-    
-
 }
 
+.inicial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicial .img img{
+    height: 40vw;
+}
+
+.scroll{
+    height: 10vw;
+}
 
 :root {
     --red: #b70303;
     --cyan: #299494;
     --orange: #fcaf4a;
     --blue: #549df2;
+    --green: #29ba4b; 
     --varyDarkBlue: #4c4e61;
     --grayishBlue: #a3a5ad;
     --veryLightGray: #f9f9f9;
@@ -229,11 +248,15 @@ h1:last-of-type {
         text-align: center;
         height: 180px;
     }
+    .scroll{
+        display: none;
+    }
 }
 
 .cyan {
     border-top: 3px solid var(--cyan);
 }
+
 .red {
     border-top: 3px solid var(--red);
 }
@@ -242,6 +265,16 @@ h1:last-of-type {
 }
 .orange {
     border-top: 3px solid var(--orange);
+}
+
+
+.cyan:hover, .red:hover, .blue:hover, .orange:hover{
+    border-top: 3px solid var(--green);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: transform 0.5s;
+
 }
 
 h2 {
@@ -273,5 +306,4 @@ h2 {
     .header p {
         width: 30%;
     }
-    
 }
