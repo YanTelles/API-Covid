@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>API Covid TO</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Dado Covid</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Algo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Outro Algo</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+    <div class="inicial">
+        <div class="texto">
+            <h1>Bem Vindo<br>ao Dados Covid</h1>
+            <div class="scroll">
+                <img src="assets/img/scroll.gif" style="height: 150px">
+            </div>
+        </div>
+        <div class="img">
+            <img src="assets/img/3515462.jpg">  
+        </div>
+    </div>
+    
+    <div class="grafic">
+        <h3 class="w3-padding-16">Dados Atualizados</h3>
+        <p class="w3-wide">Taxa de Fatalidades</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-center w3-padding-small w3-dark-grey"  style="width:8%">
+            <p id="taxa" ></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row1-container">
+        <div class="box box-down cyan">
+            <div class="text">
+                <h2>Fatalidades</h2>
+            </div>
+            <div class="number">
+                <h2 id="fatalidades" style="color: var(--cyan);"></h2>
+                <img class="icon" src="assets/img/triste.svg">
+            </div>
+        </div>
+
+        <div class="box red">
+            <div class="text">
+                <h2>Casos confirmados</h2>
+            </div>
+            <div class="number">
+                <h2 id="confirmados" style="color: var(--red);"></h2>
+                <img class="icon" src="assets/img/confirme.svg">
+            </div>
+        </div>
+
+        <div class="box box-down blue">
+            <div class="text">
+                <h2>População Estimada</h2>
+            </div>
+            <div class="number">
+                <h2 id="populacao" style="color: var(--blue);"></h2>
+                <img class="icon" src="assets/img/population.svg">
+            </div>
+            </div>
+        
+        </div>
+        <div class="row2-container">
+        <div class="box orange">
+            <div class="text">
+                <h2>Data de Atualização</h2>
+            </div>
+            <div class="number">
+                <h2 id="data" style="color: var(--orange);"></h2>
+                <img class="icon" src="assets/img/date.svg">
+            </div>
+        </div>
+    </div>
+
+    <a href="https://brasil.io/dataset/covid19/caso/?is_last=True&place_type=city&state=TO&format=csv">
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+    <i class="fa fa-download"></i>Baixar Dados
+    </button>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    </body>
+</html>
