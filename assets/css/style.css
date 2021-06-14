@@ -232,6 +232,10 @@ h1:last-of-type {
 }
 
 @media (max-width: 950px){
+    body{
+        background-position-y: 45px;   
+    }
+    
     .scroll{
         display: none;
     }
