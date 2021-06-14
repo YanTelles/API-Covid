@@ -163,6 +163,12 @@ header{
         display: block;
         cursor: pointer;
     }
+
+}
+
+.texto{
+    text-align: center;
+    font-size: 1vw;
 }
 
 .inicial{
@@ -225,6 +231,17 @@ h1:last-of-type {
     }
 }
 
+@media (max-width: 950px){
+    .scroll{
+        display: none;
+    }
+
+    .inicial{
+        font-size: 2.5vw;
+        flex-direction: column-reverse;
+    }
+}
+
 
 .box p {
     color: var(--grayishBlue);
@@ -248,9 +265,7 @@ h1:last-of-type {
         text-align: center;
         height: 180px;
     }
-    .scroll{
-        display: none;
-    }
+
 }
 
 .cyan {
@@ -306,4 +321,5 @@ h2 {
     .header p {
         width: 30%;
     }
+
 }
