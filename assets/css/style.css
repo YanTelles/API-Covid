@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
+:root {
+    --red: #b70303;
+    --cyan: #299494;
+    --orange: #fcaf4a;
+    --blue: #549df2;
+    --green: #29ba4b; 
+    --varyDarkBlue: #4c4e61;
+    --grayishBlue: #a3a5ad;
+    --veryLightGray: #f9f9f9;
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
 * {
     margin: 0;
     padding: 5px;
@@ -10,20 +24,14 @@ html {
     padding-top: 60px;
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
-}
-
-body{
     background-size: cover;
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-li {
+li, a {
     list-style: none;
-}
-
-a {
     text-decoration: none;
 }
 
@@ -45,7 +53,7 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: var(--cyan);
 }
 
 .nav-menu {
@@ -59,19 +67,19 @@ a {
 }
 
 .nav-link{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    color: #475569;
+    color: var(--cyan);
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    color: var(--green);
 }
 
 .nav-logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    color: #482ff7;
+    color: var(--cyan);
 }
 
 header{
@@ -185,20 +193,6 @@ header{
     height: 10vw;
 }
 
-:root {
-    --red: #b70303;
-    --cyan: #299494;
-    --orange: #fcaf4a;
-    --blue: #549df2;
-    --green: #29ba4b; 
-    --varyDarkBlue: #4c4e61;
-    --grayishBlue: #a3a5ad;
-    --veryLightGray: #f9f9f9;
-    --weight1: 200;
-    --weight2: 400;
-    --weight3: 600;
-}
-
 .text, .number{
     text-align: center;
     font-size: 12px;
@@ -225,24 +219,22 @@ h1:last-of-type {
     color: var(--varyDarkBlue);
 }
 
-@media (max-width: 400px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-}
 
 @media (max-width: 950px){
     body{
-        background-position-y: 45px;   
+        background-position-y: 45px;
     }
-    
+
     .scroll{
         display: none;
     }
 
     .inicial{
-        font-size: 2.5vw;
         flex-direction: column-reverse;
+    }
+
+    .texto{
+        font-size: 1.5vw;
     }
 }
 
