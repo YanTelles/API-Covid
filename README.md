@@ -3,7 +3,7 @@
 Site para busca de dados sobre a covid-19 no tocantins, com base no consumo da API do Brasio.io 🚀
 </p>
 
-<a href="https://brasil.io/dataset/covid19/caso_full/">Fonte da API</a>
+<a href="https://brasil.io/dataset/covid19/caso_full/">Fonte da API</a><br>
 <a href="https://yantelles.github.io/API-Covid/index.html">Página no Github Page</a>
 
 ### Autor
