@@ -83,6 +83,7 @@ li, a {
 }
 
 header{
+    z-index: 1;
     right: 0px;
     top: 0;
     padding: 0;
@@ -92,10 +93,6 @@ header{
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 }
 
-.grafic{
-    margin: 0 auto;
-    width: 80%;
-}
 
 .w3-padding-16{
     padding-top:16px!important;
@@ -186,7 +183,7 @@ header{
 }
 
 .inicial .img img{
-    height: 40vw;
+    height: 35vw;
 }
 
 .scroll{
@@ -246,6 +243,7 @@ input, button{
 }
 
 input[type="text"]{
+    font-family: 'Roboto', sans-serif;
     outline: none;
     width: 100%;
     height: 96px;
@@ -345,24 +343,15 @@ button span:before, button span:after{
     background-color: #fff;
 }
 
-#ytd-url {
-  display: block;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  padding: 10px 14px;
-  margin: 20px;
-  color: #fff;
-  font-family: Nunito;
-  font-size: 14px;
-  text-decoration: none;
-  background-color: #ff7575;
-  border-radius: 4px;
-  box-shadow: 0 10px 20px -5px rgba(255, 117, 117, 0.86);
-  z-index: 125;
+#estados{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--cyan);
+    font-size: 20px;
+    border: solid 2px;
+    outline: none;
 }
-
-
 
 @media (max-width: 950px){
     body{
@@ -405,7 +394,13 @@ button span:before, button span:after{
         text-align: center;
         height: 180px;
     }
+}
 
+#grafic{
+    text-align: center;
+    width: 85vw;
+    margin: 0 auto;
+    font-size: 12px;
 }
 
 .cyan {

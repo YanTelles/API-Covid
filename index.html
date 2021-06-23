@@ -31,20 +31,61 @@
         <div class="texto">
             <h1>Bem Vindo<br>ao Dados Covid</h1>
 
-            <div id="cover">
-                <form method="get" action="">
-                  <div class="tb">
-                    <div class="td"><input type="text" placeholder="Cidade . . ." required></div>
-                    <div class="td" id="s-cover">
-                      <button type="submit">
-                        <div id="s-circle"></div>
-                        <span></span>
-                      </button>
+            <form method="get" action="">
+                <div class="pesquisa">
+                    <div class="selecao">
+                        <select id="estados">
+                            <option selected value="">Selecione o Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RR">Roraima</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande no Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
                     </div>
-                  </div>
-                </form>
-            </div>
+                    <div id="cover">
+                        <div class="tb">
+                            <div class="td"><input autocomplete="off" list="exemplos" id="city" type="text" placeholder="Cidade . . ." required></div>
+                            <datalist id="exemplos">
+                                <option value="Palmas">
+                                <option value="Luís Eduardo Magalhães">
+                                <option value="Curitiba">
+                                <option value="São Paulo">
+                            </datalist>
 
+                            <div class="td" id="s-cover">
+                                <a href="#grafic">
+                                    <button id="btn" type="submit" >
+                                        <div id="s-circle"></div>
+                                        <span></span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
 
             <div>
                 <img class="scroll" src="assets/img/scroll.gif" ondragstart="return false;">
@@ -55,8 +96,8 @@
         </div>
     </div>
     
-    <div class="grafic">
-        <h3 class="w3-padding-16">Dados Atualizados</h3>
+    <div id="grafic">
+        <h3 class="w3-padding-16" id="resumo"></h3>
         <p class="w3-wide">Taxa de Fatalidades</p>
         <div class="w3-light-grey">
             <div class="w3-container w3-center w3-padding-small w3-dark-grey"  style="width:8%">
@@ -108,12 +149,6 @@
             </div>
         </div>
     </div>
-
-    <a href="https://brasil.io/dataset/covid19/caso/?is_last=True&place_type=city&state=TO&format=csv">
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-    <i class="fa fa-download"></i>Baixar Dados
-    </button>
-    </a>
 
     <script src="assets/js/main.js"></script>
     </body>
